@@ -20,17 +20,16 @@
                                 <rect key="frame" x="37" y="72" width="247" height="98"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="unlitBulb" translatesAutoresizingMaskIntoConstraints="NO" id="reG-hw-fZl">
-                                <rect key="frame" x="90" y="278" width="141" height="139"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="unlitBulb" translatesAutoresizingMaskIntoConstraints="NO" id="9Ka-rX-SGq">
+                                <rect key="frame" x="39" y="256" width="243" height="203"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <connections>
-                        <outlet property="lightbulbImage" destination="reG-hw-fZl" id="F8Y-58-aqt"/>
+                        <outlet property="lightbulbImage" destination="9Ka-rX-SGq" id="PkC-Mu-XKU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
