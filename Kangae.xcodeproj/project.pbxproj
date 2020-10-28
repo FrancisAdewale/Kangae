@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,8 @@
 		760342BD254853EA0054CA1F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 760342BB254853EA0054CA1F /* Main.storyboard */; };
 		760342BF254853EC0054CA1F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 760342BE254853EC0054CA1F /* Assets.xcassets */; };
 		760342C2254853EC0054CA1F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 760342C0254853EC0054CA1F /* LaunchScreen.storyboard */; };
+		760342D22548E98A0054CA1F /* Sword.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 760342D12548E98A0054CA1F /* Sword.mp3 */; };
+		760342D62548F1AC0054CA1F /* Sword2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 760342D52548F1AC0054CA1F /* Sword2.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +29,8 @@
 		760342BE254853EC0054CA1F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		760342C1254853EC0054CA1F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		760342C3254853EC0054CA1F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		760342D12548E98A0054CA1F /* Sword.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Sword.mp3; sourceTree = "<group>"; };
+		760342D52548F1AC0054CA1F /* Sword2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Sword2.mp3; sourceTree = "<group>"; };
 		B14BAD2B34D7BAC377F5B51B /* Pods-Kangae.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kangae.debug.xcconfig"; path = "Target Support Files/Pods-Kangae/Pods-Kangae.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -78,6 +82,8 @@
 				760342BE254853EC0054CA1F /* Assets.xcassets */,
 				760342C0254853EC0054CA1F /* LaunchScreen.storyboard */,
 				760342C3254853EC0054CA1F /* Info.plist */,
+				760342D12548E98A0054CA1F /* Sword.mp3 */,
+				760342D52548F1AC0054CA1F /* Sword2.mp3 */,
 			);
 			path = Kangae;
 			sourceTree = "<group>";
@@ -88,7 +94,6 @@
 				B14BAD2B34D7BAC377F5B51B /* Pods-Kangae.debug.xcconfig */,
 				09768286DAF5ACF6A7A6A681 /* Pods-Kangae.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -153,6 +158,8 @@
 			files = (
 				760342C2254853EC0054CA1F /* LaunchScreen.storyboard in Resources */,
 				760342BF254853EC0054CA1F /* Assets.xcassets in Resources */,
+				760342D22548E98A0054CA1F /* Sword.mp3 in Resources */,
+				760342D62548F1AC0054CA1F /* Sword2.mp3 in Resources */,
 				760342BD254853EA0054CA1F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
