@@ -17,7 +17,9 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var lightbulbImage: UIImageView!
     
+    let constant = Constants()
     
+    let client = DropboxClient(accessToken: "sl.AkfGEduC6WsJnKfQUYw26SJ5S1SEe-6YjkDIJQICjDpdojeoZBM9yPtDPOe5-S6zJWpeR8bG2tVE-6wcCjQWJnzMQtPCF9NuEx_hY8U8z9gmDZmW29-HVvM0BI-4R0Pw1iDNIpw")
     var timer: Timer? = nil
     var player: AVAudioPlayer?
     var sounds: [String] = ["Sword","Sword2"]
@@ -29,10 +31,8 @@ class ViewController: UIViewController {
         self.timer = Timer.scheduledTimer(timeInterval: 1.9, target: self, selector: #selector(handleTimer), userInfo: nil, repeats: false)
                 
     }
-        
     
     @objc func handleTimer() {
-                
         lightbulbImage.image = UIImage(named: "litBulb")
         playSound()
         let tap = UITapGestureRecognizer(target: self, action: #selector(stop))
@@ -42,12 +42,46 @@ class ViewController: UIViewController {
         NRSpeechToText.shared.startRecording {(result: String?, isFinal: Bool, error: Error?) in
             if error == nil {
                 if let speech = result {
+                    print(speech)
                     DropboxClientsManager.authorizeFromController(UIApplication.shared,
                                                                   controller: self,
                                                                   openURL: { (url: URL) -> Void in
                                                                     UIApplication.shared.openURL(url)
                                                                   })
-                    print(speech)
+                    
+                    self.client.files.createFolderV2(path: "/test/path/in/Dropbox/account").response { response, error in
+                        if let response = response {
+                            print(response)
+                        } else if let error = error {
+                            print(error)
+                        }
+                    }
+                    
+
+                    let fileData = "File to test!".data(using: String.Encoding.utf8, allowLossyConversion: false)!
+
+                    let request = self.client.files.upload(path: "/test/path/in/Dropbox/account", mode: .add, autorename: false, clientModified: nil, mute: false, input: fileData)
+
+                        .response { response, error in
+                            if let response = response {
+                                print(response)
+
+                            } else if let error = error {
+
+                                print("This is the error: \(error)")
+                            }
+                        }
+                        .progress { progressData in
+                            print("This is Progress Data: \(progressData)")
+                        }
+
+                    print("This is the request ID: \(request)")
+
+
+                    if error != nil {
+                        request.cancel()
+                    }
+                    
                 }
             } else {
                 print("Could not retrieve recording")

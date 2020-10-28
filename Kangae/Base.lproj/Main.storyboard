@@ -16,17 +16,24 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="generatedtext" translatesAutoresizingMaskIntoConstraints="NO" id="6Nh-jj-Hjn">
-                                <rect key="frame" x="37" y="72" width="247" height="98"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="252" image="kangae" translatesAutoresizingMaskIntoConstraints="NO" id="6Nh-jj-Hjn">
+                                <rect key="frame" x="37" y="72" width="247" height="59"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="unlitBulb" translatesAutoresizingMaskIntoConstraints="NO" id="9Ka-rX-SGq">
-                                <rect key="frame" x="39" y="256" width="243" height="203"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="unlitBulb" translatesAutoresizingMaskIntoConstraints="NO" id="9Ka-rX-SGq">
+                                <rect key="frame" x="86" y="216" width="148" height="352"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="9Ka-rX-SGq" secondAttribute="trailing" constant="86" id="3xl-Eq-gQz"/>
+                            <constraint firstItem="6Nh-jj-Hjn" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="72" id="8nK-Jn-SKh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="9Ka-rX-SGq" secondAttribute="bottom" id="ApU-aI-fdv"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6Nh-jj-Hjn" secondAttribute="trailing" constant="36" id="DFQ-Qq-5fH"/>
+                            <constraint firstItem="9Ka-rX-SGq" firstAttribute="top" secondItem="6Nh-jj-Hjn" secondAttribute="bottom" constant="85" id="Dju-Av-V4Q"/>
+                            <constraint firstItem="9Ka-rX-SGq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="86" id="QaU-f9-c35"/>
+                            <constraint firstItem="6Nh-jj-Hjn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="37" id="oYe-73-zoa"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="lightbulbImage" destination="9Ka-rX-SGq" id="PkC-Mu-XKU"/>
@@ -38,7 +45,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="generatedtext" width="120.5" height="59"/>
+        <image name="kangae" width="120.5" height="59"/>
         <image name="unlitBulb" width="256" height="256"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

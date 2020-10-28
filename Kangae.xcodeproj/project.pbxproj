@@ -16,6 +16,7 @@
 		760342C2254853EC0054CA1F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 760342C0254853EC0054CA1F /* LaunchScreen.storyboard */; };
 		760342D22548E98A0054CA1F /* Sword.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 760342D12548E98A0054CA1F /* Sword.mp3 */; };
 		760342D62548F1AC0054CA1F /* Sword2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 760342D52548F1AC0054CA1F /* Sword2.mp3 */; };
+		7668D4B02549D9A100DDD2C7 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7668D4AF2549D9A100DDD2C7 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		760342C3254853EC0054CA1F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		760342D12548E98A0054CA1F /* Sword.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Sword.mp3; sourceTree = "<group>"; };
 		760342D52548F1AC0054CA1F /* Sword2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Sword2.mp3; sourceTree = "<group>"; };
+		7668D4AF2549D9A100DDD2C7 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		B14BAD2B34D7BAC377F5B51B /* Pods-Kangae.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kangae.debug.xcconfig"; path = "Target Support Files/Pods-Kangae/Pods-Kangae.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -76,6 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				760342B5254853EA0054CA1F /* AppDelegate.swift */,
+				7668D4AF2549D9A100DDD2C7 /* Constants.swift */,
 				760342B7254853EA0054CA1F /* SceneDelegate.swift */,
 				760342B9254853EA0054CA1F /* ViewController.swift */,
 				760342BB254853EA0054CA1F /* Main.storyboard */,
@@ -216,6 +219,7 @@
 				760342BA254853EA0054CA1F /* ViewController.swift in Sources */,
 				760342B6254853EA0054CA1F /* AppDelegate.swift in Sources */,
 				760342B8254853EA0054CA1F /* SceneDelegate.swift in Sources */,
+				7668D4B02549D9A100DDD2C7 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
