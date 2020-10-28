@@ -2,6 +2,22 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>LSApplicationCategoryType</key>
+	<string></string>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>db-9u1x6i8ciriu2i1</string>
+			</array>
+		</dict>
+	</array>
+    <key>LSApplicationQueriesSchemes</key>
+        <array>
+            <string>dbapi-8-emm</string>
+            <string>dbapi-2</string>
+        </array>
 	<key>NSMicrophoneUsageDescription</key>
 	<string>Need to record your voice</string>
 	<key>NSSpeechRecognitionUsageDescription</key>

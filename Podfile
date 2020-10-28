@@ -6,6 +6,9 @@ target 'Kangae' do
 
   # Pods for Kangae
   
+pod 'SwiftyDropbox'
+  
 pod "NRSpeechToText"
+
 
 end

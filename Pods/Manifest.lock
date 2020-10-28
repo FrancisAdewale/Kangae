@@ -1,16 +1,24 @@
 PODS:
+  - Alamofire (4.8.2)
   - NRSpeechToText (1.0.0)
+  - SwiftyDropbox (6.0.3):
+    - Alamofire (~> 4.8.2)
 
 DEPENDENCIES:
   - NRSpeechToText
+  - SwiftyDropbox
 
 SPEC REPOS:
   trunk:
+    - Alamofire
     - NRSpeechToText
+    - SwiftyDropbox
 
 SPEC CHECKSUMS:
+  Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
   NRSpeechToText: 93b0835094319438db63e0d82899364bc0f9bba3
+  SwiftyDropbox: 7e864f1e826bfc1b9b53a5edccef6c8d5fbe9e3b
 
-PODFILE CHECKSUM: ee7561819b73982360673e7fc7cd4df3ccb6b50d
+PODFILE CHECKSUM: 237e88b982a1e4de9f92d42e23c342b1f2bafda6
 
 COCOAPODS: 1.9.3

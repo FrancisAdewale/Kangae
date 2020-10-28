@@ -1,2 +1,4 @@
 ${PODS_ROOT}/Target Support Files/Pods-Kangae/Pods-Kangae-frameworks.sh
+${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework
 ${BUILT_PRODUCTS_DIR}/NRSpeechToText/NRSpeechToText.framework
+${BUILT_PRODUCTS_DIR}/SwiftyDropbox/SwiftyDropbox.framework

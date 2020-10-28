@@ -8,6 +8,7 @@
 import UIKit
 import NRSpeechToText
 import AVFoundation
+import SwiftyDropbox
 
 
 
@@ -41,6 +42,11 @@ class ViewController: UIViewController {
         NRSpeechToText.shared.startRecording {(result: String?, isFinal: Bool, error: Error?) in
             if error == nil {
                 if let speech = result {
+                    DropboxClientsManager.authorizeFromController(UIApplication.shared,
+                                                                  controller: self,
+                                                                  openURL: { (url: URL) -> Void in
+                                                                    UIApplication.shared.openURL(url)
+                                                                  })
                     print(speech)
                 }
             } else {
