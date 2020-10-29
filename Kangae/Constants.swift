@@ -9,7 +9,7 @@ import Foundation
 
 struct Constants {
     
-    let MyAPIKey = "x4gkk3n3xt0igao"
+    let MyAPIKey = "\(MyApiKey)"
     
 }
 

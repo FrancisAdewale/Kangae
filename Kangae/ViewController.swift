@@ -19,7 +19,7 @@ class ViewController: UIViewController {
     
     let constant = Constants()
     
-    let client = DropboxClient(accessToken: "sl.AkfGEduC6WsJnKfQUYw26SJ5S1SEe-6YjkDIJQICjDpdojeoZBM9yPtDPOe5-S6zJWpeR8bG2tVE-6wcCjQWJnzMQtPCF9NuEx_hY8U8z9gmDZmW29-HVvM0BI-4R0Pw1iDNIpw")
+    let client = DropboxClient(accessToken: \(MyAccessToken))
     var timer: Timer? = nil
     var player: AVAudioPlayer?
     var sounds: [String] = ["Sword","Sword2"]
@@ -58,9 +58,9 @@ class ViewController: UIViewController {
                     }
                     
 
-                    let fileData = "File to test!".data(using: String.Encoding.utf8, allowLossyConversion: false)!
+                    let fileData = speech.data(using: String.Encoding.utf8, allowLossyConversion: false)!
 
-                    let request = self.client.files.upload(path: "/test/path/in/Dropbox/account", mode: .add, autorename: false, clientModified: nil, mute: false, input: fileData)
+                    let request = self.client.files.upload(path: "/test/path/in/Dropbox/account", mode: .add, autorename: true, clientModified: nil, mute: false, input: fileData)
 
                         .response { response, error in
                             if let response = response {
